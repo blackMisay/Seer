@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAC40E6B-AA34-4FFF-B74A-063F32CA0CBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Seer_Optical_Clinic.My.MyApplication</StartupObject>
+    <RootNamespace>Seer_Optical_Clinic</RootNamespace>
+    <AssemblyName>Seer Optical Clinic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Seer Optical Clinic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Seer Optical Clinic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_EyeExamination.Designer.vb">
+      <DependentUpon>frm_EyeExamination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_EyeExamination.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_FrameAndLens.Designer.vb">
+      <DependentUpon>frm_FrameAndLens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_FrameAndLens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_OrderSlip.Designer.vb">
+      <DependentUpon>frm_OrderSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_OrderSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_Payment.Designer.vb">
+      <DependentUpon>frm_Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_addFeature.Designer.vb">
+      <DependentUpon>frm_addFeature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_addFeature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_ViewMore.Designer.vb">
+      <DependentUpon>frm_ViewMore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_ViewMore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_addAppointment.Designer.vb">
+      <DependentUpon>frm_addAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_addAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_addpatients.Designer.vb">
+      <DependentUpon>frm_addpatients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_addpatients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_appointment..Designer.vb">
+      <DependentUpon>frm_appointment..vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_appointment..vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AppointmentCallendar.Designer.vb">
+      <DependentUpon>frm_AppointmentCallendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AppointmentCallendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_success.Designer.vb">
+      <DependentUpon>frm_success.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_success.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Customer.Designer.vb">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Inventory2.0.Designer.vb">
+      <DependentUpon>frm_Inventory2.0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Inventory2.0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_TransactionModule.Designer.vb">
+      <DependentUpon>frm_TransactionModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_TransactionModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_ChangePassword.Designer.vb">
+      <DependentUpon>frm_ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Login.Designer.vb">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Maintenance.Designer.vb">
+      <DependentUpon>frm_Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reports.Designer.vb">
+      <DependentUpon>frm_reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_time.Designer.vb">
+      <DependentUpon>frm_time.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_time.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_services.Designer.vb">
+      <DependentUpon>frm_services.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_services.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_electronicmedicalrecords.Designer.vb">
+      <DependentUpon>frm_electronicmedicalrecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElecronicMedicalRecords\frm_electronicmedicalrecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.vb">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patient.Designer.vb">
+      <DependentUpon>frm_patient.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_restoreAppointment .Designer.vb">
+      <DependentUpon>frm_restoreAppointment .vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_restoreAppointment .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_restore.Designer.vb">
+      <DependentUpon>frm_restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Stocks.Designer.vb">
+      <DependentUpon>frm_Stocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryScreen\frm_Stocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modcon1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_ManageDoctor.Designer.vb">
+      <DependentUpon>frm_ManageDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_ManageDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Register.Designer.vb">
+      <DependentUpon>frm_Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEER OPTCAL ADMIN\frm_Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toggle.Designer.vb">
+      <DependentUpon>Toggle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Toggle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_EyeExamination.resx">
+      <DependentUpon>frm_EyeExamination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_FrameAndLens.resx">
+      <DependentUpon>frm_FrameAndLens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_OrderSlip.resx">
+      <DependentUpon>frm_OrderSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_Payment.resx">
+      <DependentUpon>frm_Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryScreen\frm_addFeature.resx">
+      <DependentUpon>frm_addFeature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_ViewMore.resx">
+      <DependentUpon>frm_ViewMore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_addAppointment.resx">
+      <DependentUpon>frm_addAppointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_addpatients.resx">
+      <DependentUpon>frm_addpatients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_appointment..resx">
+      <DependentUpon>frm_appointment..vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AppointmentCallendar.resx">
+      <DependentUpon>frm_AppointmentCallendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_success.resx">
+      <DependentUpon>frm_success.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryScreen\frm_Customer.resx">
+      <DependentUpon>frm_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryScreen\frm_Inventory2.0.resx">
+      <DependentUpon>frm_Inventory2.0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_TransactionModule.resx">
+      <DependentUpon>frm_TransactionModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_ChangePassword.resx">
+      <DependentUpon>frm_ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_Login.resx">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_Maintenance.resx">
+      <DependentUpon>frm_Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reports.resx">
+      <DependentUpon>frm_reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_time.resx">
+      <DependentUpon>frm_time.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_services.resx">
+      <DependentUpon>frm_services.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElecronicMedicalRecords\frm_electronicmedicalrecords.resx">
+      <DependentUpon>frm_electronicmedicalrecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patient.resx">
+      <DependentUpon>frm_patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_restoreAppointment .resx">
+      <DependentUpon>frm_restoreAppointment .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_restore.resx">
+      <DependentUpon>frm_restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryScreen\frm_Stocks.resx">
+      <DependentUpon>frm_Stocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_ManageDoctor.resx">
+      <DependentUpon>frm_ManageDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEER OPTCAL ADMIN\frm_Register.resx">
+      <DependentUpon>frm_Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toggle.resx">
+      <DependentUpon>Toggle.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-records.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
