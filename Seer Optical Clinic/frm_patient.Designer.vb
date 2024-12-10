@@ -98,7 +98,7 @@ Partial Class frm_patient
         Me.btnsearch.Name = "btnsearch"
         Me.btnsearch.Size = New System.Drawing.Size(79, 30)
         Me.btnsearch.TabIndex = 30
-        Me.btnsearch.Text = "Search"
+        Me.btnsearch.Text = "&Search"
         Me.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnsearch.UseVisualStyleBackColor = False
         '
